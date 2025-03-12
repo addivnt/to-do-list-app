@@ -1,0 +1,31 @@
+.list-card-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  min-height: 1em;
+}
+
+.list-card-header h3 {
+  cursor: default;
+}
+
+.list-card-header input {
+  width: 80%;
+  margin: 0;
+  padding: 2px;
+}
+
+.list-card-header i {
+  color: transparent;
+  cursor: pointer;
+  font-size: 0.8em;
+  transition: color 0.15s;
+}
+
+.list-card-header:hover i {
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.list-card-header i:hover {
+  color: rgba(0, 0, 0, 0.5);
+}

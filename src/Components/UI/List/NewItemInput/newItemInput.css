@@ -1,0 +1,51 @@
+.add-item-button {
+  position: absolute;
+  bottom: 1em;
+  text-align: left;
+  background: transparent;
+  border: none;
+  font-size: 0.8em;
+  color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.add-item-button:hover {
+  color: rgb(255, 55, 135);
+}
+
+.list-card-new-item {
+  margin: 0 !important;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.list-card-new-item input {
+  width: 100%;
+}
+
+.list-card-new-item i {
+  font-size: 12px;
+  background: transparent;
+  padding: 3px 4px;
+  color: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  transition: background 0.2s;
+}
+
+.new-item-button {
+  border: none;
+  background: transparent;
+}
+
+.new-item-button:hover i {
+  cursor: pointer;
+  background: rgba(29, 212, 105, 1);
+  color: white;
+}
+
+.new-item-button:focus i {
+  background: rgba(29, 212, 105, 1);
+  color: white;
+}

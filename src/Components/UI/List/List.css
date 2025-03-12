@@ -1,0 +1,39 @@
+.list-card {
+  position: relative;
+}
+
+/* DELETE BUTTON */
+
+.delete-button {
+  position: absolute;
+  top: 0.2em;
+  left: 0.5em;
+  background: transparent;
+  border-radius: 50%;
+  height: 0;
+  width: 12px;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.delete-button i {
+  font-size: 0.5em;
+  color: transparent;
+  transition: color 0.2s;
+}
+
+.list-card:hover .delete-button {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.delete-button:hover i {
+  color: white !important;
+}
+
+.delete-button:hover {
+  cursor: pointer;
+  background: rgb(255, 95, 111) !important;
+}

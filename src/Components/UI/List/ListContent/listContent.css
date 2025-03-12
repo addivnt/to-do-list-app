@@ -1,0 +1,44 @@
+.list-item {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.list-item:not(.checked) {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.list-item:hover:not(.checked) {
+  color: black;
+}
+
+.list-item span {
+  width: 100%;
+}
+
+.checked span {
+  text-decoration: line-through;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.checked span:hover {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.list-item .fa-xmark {
+  color: rgba(0, 0, 0, 0.2);
+  transform: scale(0.8);
+  display: none;
+  transition: color 0.2s;
+  padding: 0 4px;
+}
+
+.list-item .fa-xmark:hover {
+  color: rgb(255, 55, 135);
+}
+
+.list-item:hover .fa-xmark {
+  display: block;
+}

@@ -1,0 +1,85 @@
+#navbar {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 0px 0px 10px 10px;
+  padding-left: 1em;
+  font-size: 12px;
+  transition: padding 0.3s;
+  background: white;
+  gap: 1em;
+  z-index: 10;
+}
+
+#navbar:hover {
+  padding-top: 0.2em;
+}
+
+#navbar ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+#navbar .navbar-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1em;
+}
+
+#navbar li {
+  list-style-type: none;
+}
+
+#navbar li:hover {
+  cursor: pointer;
+}
+
+#navbar a {
+  display: inline-block;
+  padding: 1em;
+  text-decoration: none;
+  color: black;
+}
+
+#navbar li a {
+  color: rgb(117, 117, 117);
+  transition: color 0.2s;
+}
+
+#navbar li:hover a {
+  color: rgb(0, 0, 0);
+}
+
+#navbar .logo a {
+  font-size: 1.5em;
+  padding: 0.47em;
+  user-select: none;
+  color: black;
+}
+
+#navbar .logo:hover {
+  cursor: pointer;
+}
+
+#navbar .navbar-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1em;
+  cursor: pointer;
+}
+
+#navbar .navbar-search i {
+  color: rgb(117, 117, 117);
+  padding: 0 1em;
+  font-size: 1em;
+  transition: color 0.2s;
+}
+
+#navbar .navbar-search:hover i {
+  color: rgb(0, 0, 0);
+}
