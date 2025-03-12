@@ -1,6 +1,6 @@
 # To-Do List
 
-[To do list app demo image](public/demo.png)
+<img src='public/demo.png' alt='To-do List app demo image'/>
 
 ## A minimalist To-Do List application project
 
