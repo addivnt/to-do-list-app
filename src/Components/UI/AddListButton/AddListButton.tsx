@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./AddListButton.css";
 import { AddListButtonPropTypes } from "../../../componentTypes.ts";
+import { ThemeContext } from "../../../App.tsx";
 
 function AddListButton({ setData }: AddListButtonPropTypes) {
   const [newListEditMode, setNewListEditMode] = React.useState<boolean | null>(
     null
   );
+  const { theme } = useContext(ThemeContext);
   const inputRef = React.useRef<HTMLInputElement | null>(null);
 
   const createNewList = (input: HTMLInputElement | null) => {
@@ -40,10 +42,10 @@ function AddListButton({ setData }: AddListButtonPropTypes) {
   };
 
   return (
-    <div className="add-list-menu">
+    <div className={`add-list-menu ${theme}`}>
       {!newListEditMode && (
         <div
-          className="add-list-button"
+          className="add-list-button card"
           onClick={() => setNewListEditMode(true)}
         >
           <button type="button">
@@ -54,7 +56,7 @@ function AddListButton({ setData }: AddListButtonPropTypes) {
       {newListEditMode ? (
         <>
           <div
-            className="add-list-button"
+            className="add-list-button card"
             onClick={() => createNewList(inputRef?.current)}
           >
             <button type="button">

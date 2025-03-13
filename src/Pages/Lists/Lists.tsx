@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import List from "../../Components/UI/List/List.tsx";
 import { ListType } from "../../../api/dataTypes.ts";
 import "./lists.css";
 import AddListButton from "../../Components/UI/AddListButton/AddListButton.tsx";
+import { ThemeContext } from "../../App.tsx";
 
 function Lists() {
   const [data, setData] = React.useState<[] | ListType[]>([]);
+  const { theme } = useContext(ThemeContext);
 
   const getListsData = async () => {
     console.log("Fetching data...");
@@ -28,7 +30,7 @@ function Lists() {
   return (
     <>
       <AddListButton setData={setData} />
-      <section className="lists-container">{listElements}</section>
+      <section className={`lists-container ${theme}`}>{listElements}</section>
     </>
   );
 }

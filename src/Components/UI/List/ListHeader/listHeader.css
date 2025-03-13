@@ -20,12 +20,45 @@
   cursor: pointer;
   font-size: 0.8em;
   transition: color 0.15s;
+  padding: 3px 4px;
 }
 
 .list-card-header:hover i {
-  color: rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.2);
 }
 
 .list-card-header i:hover {
   color: rgba(0, 0, 0, 0.5);
+}
+
+.list-card-header i:hover:not(.fa-pen-to-square) {
+  background: rgba(29, 212, 105, 1);
+  border-radius: 3px;
+  color: white;
+}
+
+.list-card-header:focus i:not(.fa-pen-to-square) {
+  background: rgba(29, 212, 105, 1);
+  color: white;
+}
+
+/* DARK MODE */
+
+.dark .list-card-header:hover i {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.dark .list-card-header i:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.dark .list-card-header input {
+  background: rgb(38, 38, 38);
+  padding: 3px;
+  border-radius: 3px;
+  border: 1px solid rgb(112, 112, 112);
+}
+
+.dark .list-card-header i:hover:not(.fa-pen-to-square) {
+  color: white;
 }

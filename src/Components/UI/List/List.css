@@ -1,5 +1,6 @@
 .list-card {
   position: relative;
+  transition: background 0.2s;
 }
 
 /* DELETE BUTTON */
@@ -36,4 +37,10 @@
 .delete-button:hover {
   cursor: pointer;
   background: rgb(255, 95, 111) !important;
+}
+
+/* DARK MODE */
+
+.dark .list-card:hover .delete-button {
+  background: rgba(255, 255, 255, 0.1);
 }

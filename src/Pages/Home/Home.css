@@ -49,3 +49,10 @@ section {
 .home-nav li:hover a {
   color: inherit;
 }
+
+/* DARK MODE */
+
+.dark .home-nav span:last-child {
+  color: rgba(255, 255, 255, 0.2);
+  transition: all 0.2s;
+}

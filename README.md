@@ -1,6 +1,6 @@
 # To-Do List
 
-<img src='public/demo.png' alt='To-do List app demo image'/>
+<img src='public/demo-light.png' alt='To-do List app demo image'/> <img src='public/demo-night.png' alt='To-do List app demo image'/>
 
 ## A minimalist To-Do List application project
 
@@ -11,7 +11,7 @@
 
 ### _More to come:_
 
-- Night mode
+- Dark mode ✅
 - Time stamps
 - Notes!
 

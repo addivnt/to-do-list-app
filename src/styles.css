@@ -12,3 +12,22 @@
 main {
   padding: 4em 1em;
 }
+
+/* DARK MODE */
+
+body {
+  transition: background 0.2s;
+}
+
+body:has(.dark) {
+  background: rgb(40, 40, 40);
+}
+
+.dark * {
+  color: white;
+}
+
+.dark .card,
+.dark#navbar {
+  background: rgb(61, 61, 61) !important;
+}

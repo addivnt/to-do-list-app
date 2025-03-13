@@ -37,6 +37,7 @@
 .new-item-button {
   border: none;
   background: transparent;
+  transition: color 0.2s;
 }
 
 .new-item-button:hover i {
@@ -47,5 +48,34 @@
 
 .new-item-button:focus i {
   background: rgba(29, 212, 105, 1);
+  color: white;
+}
+
+/* DARK MODE */
+
+.dark .add-item-button {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.dark .add-item-button:hover {
+  color: rgb(255, 55, 135);
+}
+
+.dark .list-card-new-item input {
+  background: rgb(38, 38, 38);
+  padding: 2px;
+  border-radius: 3px;
+  border: 1px solid rgb(112, 112, 112);
+}
+
+.dark .new-item-button i {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.dark .new-item-button:hover i {
+  color: white;
+}
+
+.dark .new-item-button:focus i {
   color: white;
 }

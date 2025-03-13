@@ -42,3 +42,30 @@
 .list-item:hover .fa-xmark {
   display: block;
 }
+
+/* DARK MODE */
+
+.dark .list-item span {
+  color: rgb(215, 215, 215);
+}
+
+.dark .list-item span:hover {
+  color: rgb(255, 255, 255);
+}
+
+.dark .checked span {
+  color: rgb(132, 132, 132);
+}
+
+.dark .checked span:hover {
+  color: rgb(202, 202, 202);
+}
+
+.dark .list-item .fa-xmark {
+  /* display: none; */
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.dark .list-item .fa-xmark:hover {
+  color: rgb(255, 55, 135);
+}

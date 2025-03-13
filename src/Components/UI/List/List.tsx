@@ -137,7 +137,7 @@ function List({ list, setData }: ListPropTypes) {
   ));
 
   return (
-    <article key={list.id} className="list-card">
+    <article key={list.id} className="list-card card">
       <div className="delete-button" onClick={_e => handleDelete()}>
         <i className="fa-solid fa-xmark"></i>
       </div>
