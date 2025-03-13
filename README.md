@@ -1,6 +1,6 @@
 # To-Do List
 
-<img src='public/demo-light.png' alt='To-do List app demo image' width=40%/> <img src='public/demo-night.png' alt='To-do List app demo image' width=40%/>
+<img src='public/demo-light.png' alt='To-do List app demo image' width=49.7%/> <img src='public/demo-night.png' alt='To-do List app demo image' width=49.7%/>
 
 ## A minimalist To-Do List application project
 
